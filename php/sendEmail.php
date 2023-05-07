@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'portfolio.it.zh@gmail.com';
+$to = 'crp.questions@gmail.com';
 
 function url(){
   return sprintf(
