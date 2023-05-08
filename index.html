@@ -23,34 +23,61 @@
     <!--Navbar Start-->
 
         <!--Navbar Start-->
-        <div class="uk-container uk-margin-medium-top uk-margin-medium-bottom">
+
+        <div id="home" class="uk-container uk-margin-medium-bottom">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#members">Members</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li>
-                            <a href="#">CRP-Offers  <span uk-icon="icon: chevron-down"></span></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Education</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav uk-visible@m">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#members">Members</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li>
+                    <a href="#">CRP-Offers  <span uk-icon="icon: chevron-down"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Education</a></li>
+                        </ul>
+                    </div>
+                </li>
+                </ul>
+                
+                <ul class="uk-navbar-nav uk-hidden@m">
+                  <li>
+                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav"><span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
+                  </li>
+                </ul>
+              </div>
             </nav>
-        </div>
-        
+          </div>
+          
+          <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-nav uk-nav-default">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <hr class="uk-divider-icon">
+                
+                  <a href="#">CRP-Offers</a>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">Education</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
 
     <!--Navbar Finis-->
 
         <!--Slideshow Start-->
-        <div class="uk-container uk-margin-medium-top uk-margin-medium-bottom">
+        <div class="uk-container">
         <div id="oursite" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true">
             <ul class="uk-slideshow-items">
 
@@ -96,7 +123,7 @@
 
                 <!--4th slide start-->
                 <li>
-                    <img src="img/CRP-OFFERS.gif" alt="">
+                    <img src="img/CRP-OFFERS.png" alt="">
                      <div class="uk-position-center uk-position-small uk-text-center">
                          <br>
                          <br>
@@ -119,6 +146,8 @@
         <br>
 
         <!--grid members start-->
+
+        <div class="uk-container">
         <hr class="uk-divider-icon">
         <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
             <div id="members">
@@ -150,6 +179,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!--grid members finis-->
 
         <br>
@@ -157,6 +187,8 @@
         <br>
 
         <!--grid start about us-->
+
+        <div class="uk-container">
         <hr class="uk-divider-icon">
         <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
             <div>
@@ -194,6 +226,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!--about us-->
 
@@ -206,6 +239,7 @@
         <br>
 
         <!--grid start about us-->
+        <div class="uk-container">
         <hr class="uk-divider-icon">
         <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
             <div>
@@ -265,6 +299,8 @@
                                             <div class="info-wrap w-100 p-lg-5 p-4 img">
                                                 <h3>Contact us</h3>
                                                 <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+
+                                                <!--
                                         <div class="dbox w-100 d-flex align-items-start">
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <span class="fa fa-map-marker"></span>
@@ -281,6 +317,7 @@
                                             <p><span>Phone:</span> <a href="tel://+41786957297"> +41 78 695 72 97 </a></p>
                                           </div>
                                       </div>
+                                      -->
                                         <div class="dbox w-100 d-flex align-items-center">
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <span class="fa fa-paper-plane"></span>
@@ -293,8 +330,8 @@
                                             <div class="icon d-flex align-items-center justify-content-center">
                                                 <span class="fa fa-globe"></span>
                                             </div>
-                                            <div class="text pl-3">
-                                            <p><span>Website</span> <a href="#oursite">rcprc.github.io</a></p>
+                                            <div class="text pl-1">
+                                            <p><span>Website:</span> <a href="#oursite">rcprc.github.io </a></p>
                                           </div>
                                       </div>
                                   </div>
@@ -308,6 +345,7 @@
                 
             </div>
         </div>
+    </div>
         <!--grid finis about us-->
 
     <br>
@@ -317,10 +355,52 @@
 
     <!--Grid Content Finis-->
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <!--footer start-->
+
+    <footer class="uk-footer uk-section uk-section-secondary">
+        <div class="uk-container">
+          <div class="uk-grid uk-child-width-expand@s" uk-grid>
+            <div>
+              <h4>About Us</h4>
+              <p>
+                <!--about us text-->
+
+                We, the RCPRC Organization are committed to help aspiring computer, it-students and people in general advance their knowledge with various tasks. We believe that everyone should have a certain knowledge of computer science no matter their financial background.
+
+                <!--about us text-->
+              </p>
+            </div>
+            <div>
+              <h4>Links</h4>
+              <ul class="uk-list uk-list-divider">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact Us</h4>
+              <ul class="uk-list">
+                <li><span uk-icon="icon: mail"></span> <a href="mailto:crp.questions@gmail.com">crp.questions@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="uk-text-small uk-text-center">
+            <p>&copy; 2023 RCPRC. All Rights Reserved.</p>
+            <!--
+            <ul class="uk-list uk-list-inline">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        -->
+        </div>
+      </footer>
+      
+
+    <!--footer finis-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
