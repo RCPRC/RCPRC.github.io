@@ -19,6 +19,71 @@ p.slideshow-text-desc {
     color: rgb(84, 84, 84);
 }
 
+img.card{
+    height: 128px;
+    width: 128px;
+}
+
+img.card-special{
+    height: 128px;
+    width: 148px;
+}
+
+body.restricted{
+    overflow: hidden;
+    max-height: 600px;
+}
+
+h3.title{
+    font-size: 5em;
+}
+
+h4.subtitle{
+    font-size:1cm;
+}
+
+.cheatsheet-grid{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 200px;
+}
+
+button.toggle{
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 10%;
+    height: 15%;
+}
+
+.cheatsheet-nav{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+}
+
+.buttondesc{
+    margin-left: 7%;
+    margin-right: 10%;
+    width: auto;
+    height: auto;
+}
+
+button.toggle2{
+    margin-left: 15%;
+    margin-right: 10%;
+    background-color: #aeaeae; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* round edges */
+}
+
 /*Styles for Samsung Note 22*/
 @media only screen and (min-device-width: 360px) and (max-device-width: 2400px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
     html {
@@ -40,6 +105,71 @@ p.slideshow-text-desc {
 
     p.slideshow-text-des {c
         color: rgb(84, 84, 84);
+    }
+
+    img.card{
+        height: 128px;
+        width: 128px;
+    }
+    
+    img.card-special{
+        height: 128px;
+        width: 148px;
+    }
+    
+    body.restricted{
+        overflow: hidden;
+        max-height: 600px;
+    }
+    
+    h3.title{
+        font-size: 5em;
+    }
+    
+    h4.subtitle{
+        font-size:1cm;
+    }
+    
+    .cheatsheet-grid{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 200px;
+    }
+    
+    button.toggle{
+        margin-left: 15%;
+        margin-right: 10%;
+        width: 10%;
+        height: 15%;
+    }
+    
+    .cheatsheet-nav{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: auto;
+    }
+    
+    .buttondesc{
+        margin-left: 7%;
+        margin-right: 10%;
+        width: auto;
+        height: auto;
+    }
+    
+    button.toggle2{
+        margin-left: 15%;
+        margin-right: 10%;
+        background-color: #aeaeae; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px; /* round edges */
     }
 
   }

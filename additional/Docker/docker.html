@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Docker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <button id="toggleButton" class="toggle">Change Version</button>
+    <br>
+    <br>
+    <div class="cheatsheet-grid">
+        <p class="buttondesc">To change the version of the cheatsheet please click the button above</p>
+
+
+            <!--Cheatsheet for Linux-->
+    <div id="div1" class="cheatsheet-grid">
+        <br>
+        <br>
+        <zero-md src="docker-cheatsheet-lin.md">
+            <template>
+                <link rel="stylesheet" href="../../css/style-1.css" />
+                <link rel="stylesheet" href="../../css/style-2.css" />
+            </template>
+        </zero-md>
+    <br>
+    </div>
+    <!--Cheatsheet for linux-->
+
+    <!--Cheatsheet for Linux-->
+    <div id="div2" style="display: none;" class="cheatsheet-grid">
+        <br>
+        <br>
+        <zero-md src="docker-cheatsheet-win.md">
+            <template>
+                <link rel="stylesheet" href="../../css/style-1.css" />
+                <link rel="stylesheet" href="../../css/style-2.css" />
+            </template>
+        </zero-md>
+    <br>
+    </div>
+    <!--Cheatsheet for linux-->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+    <script src="../../js/div-toggler.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
+<!--
+    LOOK INTO THE FOLDER STRUCTURE THERE IS SOMETHING HIDDEN. LOOK FOR DADJOKESGENERATOR.HTML
+-->
