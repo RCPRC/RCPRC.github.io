@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'crp.questions@gmail.com';
+$to = 'rcprc.info@gmail.com';
 
 function url(){
   return sprintf(
